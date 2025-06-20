@@ -16,9 +16,11 @@ This script offers a user-friendly command-line interface that supports four cor
 > **Note:** Only one of `-l`, `-a`, `-p`, or `-d` can be used per command.
 
 ## Usage
+
+```sh
 source ./editlist.sh
 editlist [ -l | -a | -p | -d ] [-e VAR] [-s SEP] [arg1 arg2 ...]
-
+```
 ___
 
 ## Examples
