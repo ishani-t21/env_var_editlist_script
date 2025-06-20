@@ -1,6 +1,6 @@
 # env_var_editlist_script
 A POSIX-compliant shell script designed to provide robust and flexible manipulation of environment variables that use a separator-based list format—such as PATH, LD_LIBRARY_PATH, or other user-defined variables. These variables typically store multiple directory or value entries separated by characters like : or ;, and managing them manually can be error-prone and time-consuming.
-___
+
 
 This script offers a user-friendly command-line interface that supports four core operations:
 | Flag   | Description                                    |
