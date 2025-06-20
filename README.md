@@ -1,5 +1,6 @@
 # env_var_editlist_script
 A POSIX-compliant shell script designed to provide robust and flexible manipulation of environment variables that use a separator-based list format—such as PATH, LD_LIBRARY_PATH, or other user-defined variables. These variables typically store multiple directory or value entries separated by characters like : or ;, and managing them manually can be error-prone and time-consuming.
+___
 
 This script offers a user-friendly command-line interface that supports four core operations:
 | Flag   | Description                                    |
@@ -13,14 +14,14 @@ This script offers a user-friendly command-line interface that supports four cor
 
 > **Note:** Only one of `-l`, `-a`, `-p`, or `-d` can be used per command.
 
-## Usage
+### Usage
 
 ```sh
 source ./editlist.sh
 editlist [ -l | -a | -p | -d ] [-e VAR] [-s SEP] [arg1 arg2 ...]
 ```
 
-## Examples
+### Examples
 
 `#` List entries in $PATH
 editlist -l
@@ -34,7 +35,7 @@ editlist -p -e LD_LIBRARY_PATH -s : /usr/local/lib64
 `#` Delete an entry from $PATH
 editlist -d /usr/local/bin
 
-## Input Validation
+### Input Validation
 - Entries containing the specified separator (e.g., :) will trigger an error.
 - The script prevents adding malformed input or unsafe strings.
 - Deletions are performed exactly (-x match in grep) to avoid accidental removal of substrings.
