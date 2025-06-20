@@ -15,15 +15,13 @@ This script offers a user-friendly command-line interface that supports four cor
 
 > **Note:** Only one of `-l`, `-a`, `-p`, or `-d` can be used per command.
 
-___
-
-##Usage
+## Usage
 source ./editlist.sh
 editlist [ -l | -a | -p | -d ] [-e VAR] [-s SEP] [arg1 arg2 ...]
 
 ___
 
-##Examples
+## Examples
 
 `#` List entries in $PATH
 editlist -l
@@ -39,7 +37,7 @@ editlist -d /usr/local/bin
 
 ___
 
-##Input Validation
+## Input Validation
 - Entries containing the specified separator (e.g., :) will trigger an error.
 - The script prevents adding malformed input or unsafe strings.
 - Deletions are performed exactly (-x match in grep) to avoid accidental removal of substrings.
